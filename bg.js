@@ -7,6 +7,7 @@ function paintImage(imgNumber){
     image.src = `./img/${imgNumber+1}.jpg`;
     image.classList.add('bgImage');
     body.appendChild(image);
+    console.log(image.src);
     
 }
 function genRandom(){
