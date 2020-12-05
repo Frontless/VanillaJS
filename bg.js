@@ -6,6 +6,7 @@ function paintImage(imgNumber){
     try{
         const image = new Image();
         image.src = `./VanillaJS/img/${imgNumber+1}.jpg`;
+        console.log(error, image.src);
         image.classList.add('bgImage');
         body.appendChild(image);
     }
