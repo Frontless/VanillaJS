@@ -3,11 +3,17 @@ const body = document.querySelector("body");
 const IMG_NUMBER = 5;
 
 function paintImage(imgNumber){
-    const image = new Image();
-    image.src = `./img/${imgNumber+1}.jpg`;
-    image.classList.add('bgImage');
-    body.appendChild(image);
-    console.log(image.src);
+    try{
+        const image = new Image();
+        image.src = `./img/${imgNumber+1}.jpg`;
+        image.classList.add('bgImage');
+        body.appendChild(image);
+    }
+    catch(error){
+        console.log(error, image.src);
+    }
+
+
     
 }
 function genRandom(){
